@@ -8,11 +8,13 @@
   <title>To do-list</title>
 
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-  <h1 id="welcome">Hi Shrey! This is your to-do list! 👀  </h1>
+
+  <h1 id="welcome">Hi Shrey! This is your to-do list! 👀 </h1>
 
   <h3 id="alert"> </h3>
 
@@ -25,6 +27,39 @@
     <div id="root"> </div>
 
   </div>
+
+
+
+
+  
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBMmMJCSGs0bw3_-vhtXRtoJzjOvYkF2ec",
+      authDomain: "to-do-list-2fdfa.firebaseapp.com",
+      databaseURL: "https://to-do-list-2fdfa.firebaseio.com",
+      projectId: "to-do-list-2fdfa",
+      storageBucket: "to-do-list-2fdfa.appspot.com",
+      messagingSenderId: "814826630403",
+      appId: "1:814826630403:web:5373376cb1dab4cec78d36",
+      measurementId: "G-QDQR7EVSQY"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+
+  </script>
+
+
 
 
   <script src="script.js"></script>
