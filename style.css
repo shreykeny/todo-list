@@ -28,3 +28,16 @@ html, body {
 #submit {
     margin: 5px;
 }
+
+.checkbox {
+    background: green;
+}
+
+.footer {
+    position : fixed; 
+    left:0;
+    bottom:0;
+    text-align: center;
+    width: 100%;
+    padding: 10px; 
+}

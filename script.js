@@ -43,22 +43,49 @@ let newItem = text => {
     let span = document.createElement('span');
 
     p.setAttribute('type', 'checkbox');
-    p.setAttribute('id', 'checkbox');
+    p.setAttribute('class', 'checkbox');
+
+    p.setAttribute('id', i);
+
+    p.setAttribute('onclick', 'myFunction(this.id)')
 
 
 
-    span.setAttribute('id', i);
+    span.setAttribute('id', "span" + i);
     span.innerHTML = list[i];
 
     div.appendChild(p);
     div.appendChild(span);
-    div.setAttribute('id', i);
 
     item.appendChild(div);
 
 }
 
-function myFunction(i) {
-    console.log(document.getElementById(i));
+function myFunction(id) {
+
+    let checkbox = document.getElementById(id);
+
+    let item = document.getElementById("span" + id);
+
+
+    if (checkbox.checked == true) {
+        item.style.color = "green";
+
+        item.style.textDecoration = "line-through";
+
+    }
+
+    else {
+
+        item.style.color = "inherit";
+
+        item.style.textDecoration = "inherit";
+    }
+
+
+
+
+
+
 
 }
